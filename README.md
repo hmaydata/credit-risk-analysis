@@ -7,6 +7,8 @@ This project analyzes borrower-level financial data to identify key drivers of c
 Using logistic regression, the model estimates the probability that a borrower will experience serious delinquency within two years.
 
 ---
+👉 [View Full Report (Interactive Notebook)](https://nbviewer.org/github/hmaydata/credit-risk-analysis/blob/main/notebooks/credit_risk_analysis.ipynb)
+---
 
 ## Objectives
 
@@ -34,8 +36,11 @@ The target variable (`SeriousDlqin2yrs`) indicates whether a borrower defaulted 
 
 ### Age Distribution
 
+![Age Distribution](outputs/age_distribution.png)
 
 ### Delinquency and Default Risk
+
+![Delinquency](outputs/delinquency.png)
 
 ---
 
