@@ -6,31 +6,8 @@ This project analyzes borrower-level financial data to identify key drivers of c
 
 Using logistic regression, the model estimates the probability that a borrower will experience serious delinquency within two years.
 
----
+
 👉 [View Full Report (Interactive Notebook)](https://nbviewer.org/github/hmaydata/credit-risk-analysis/blob/main/notebooks/credit_risk_analysis.ipynb)
----
-
-## Objectives
-
-* Identify key factors associated with default risk
-* Build an interpretable predictive model
-* Evaluate model performance using classification metrics
-* Analyze tradeoffs between precision and recall
-
----
-
-## Dataset
-
-The dataset contains 150,000 borrower records with financial and behavioral variables such as:
-
-* Credit utilization
-* Delinquency history
-* Income
-* Number of credit lines
-
-The target variable (`SeriousDlqin2yrs`) indicates whether a borrower defaulted within two years.
-
----
 
 ## Visualizations
 
@@ -42,7 +19,23 @@ The target variable (`SeriousDlqin2yrs`) indicates whether a borrower defaulted 
 
 ![Delinquency](outputs/delinquency.png)
 
----
+## Objectives
+
+* Identify key factors associated with default risk
+* Build an interpretable predictive model
+* Evaluate model performance using classification metrics
+* Analyze tradeoffs between precision and recall
+
+## Dataset
+
+The dataset contains 150,000 borrower records with financial and behavioral variables such as:
+
+* Credit utilization
+* Delinquency history
+* Income
+* Number of credit lines
+
+The target variable (`SeriousDlqin2yrs`) indicates whether a borrower defaulted within two years.
 
 ## Methodology
 
@@ -85,8 +78,6 @@ Lowering the classification threshold from 0.5 to 0.2 improved recall:
 
 This highlights the tradeoff between identifying high-risk borrowers and minimizing false positives.
 
----
-
 ## Key Insights
 
 * Past delinquency is the strongest predictor of default risk
@@ -94,23 +85,17 @@ This highlights the tradeoff between identifying high-risk borrowers and minimiz
 * Behavioral variables outperform demographic variables
 * Threshold selection significantly impacts model performance
 
----
-
 ## Limitations
 
 * Dataset may not reflect current economic conditions
 * Missing macroeconomic context
 * Static snapshot of borrower behavior
 
----
-
 ## Tools Used
 
 * Python (pandas, numpy)
 * scikit-learn
 * matplotlib / seaborn
-
----
 
 ## Conclusion
 
